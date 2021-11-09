@@ -2,7 +2,7 @@ package com.choryan.quan.wanpicture.spf
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.gameinlife.color.paint.filto.ZApp
+import com.choryan.quan.wanpicture.base.BaseApplication
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
@@ -13,7 +13,7 @@ import kotlin.reflect.KProperty
 abstract class SPFDelegate {
 
     private val preferences: SharedPreferences by lazy {
-        ZApp.instance.getSharedPreferences(
+        BaseApplication.instance.getSharedPreferences(
             getSharedPreferencesName(),
             Context.MODE_PRIVATE
         )

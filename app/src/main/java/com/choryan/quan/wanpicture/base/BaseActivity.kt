@@ -18,5 +18,10 @@ open class BaseActivity(contentLayoutId: Int) : AppCompatActivity(contentLayoutI
         if (needHideStatusBar) {
             CommonUtil.hideStatusBar(this)
         }
+        this.window.decorView.setOnSystemUiVisibilityChangeListener {
+            if (needHideStatusBar) {
+                CommonUtil.hideStatusBar(this@BaseActivity)
+            }
+        }
     }
 }
