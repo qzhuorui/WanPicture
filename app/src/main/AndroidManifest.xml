@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.choryan.quan.wanpicture">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
     <application
         android:name=".base.BaseApplication"
         android:allowBackup="true"

@@ -15,7 +15,7 @@ class ActivityChooser : BaseActivity(R.layout.activity_chooser) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        CommonUtil.deletePhotoConvertCacheFile(this)
+        //CommonUtil.deletePhotoConvertCacheFile(this)
         if (SPFBaseConfig.guideFirstShow) {
             ActivityGuide.start(this)
         } else {
